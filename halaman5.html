@@ -1,0 +1,74 @@
+<!-- halaman5.html (Halaman 5: Pesan dan Doa Terbaik dengan Tema Galactic) -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan dan Doa Terbaik Ulang Tahun</title>
+    <style>
+        body { 
+            font-family: 'Orbitron', sans-serif; 
+            text-align: center; 
+            background: linear-gradient(45deg, #e94560, #0f3460, #f39c12); 
+            color: #ffffff; 
+            overflow: hidden; 
+            position: relative; 
+        }
+        body::before { 
+            content: ''; 
+            position: absolute; 
+            top: 0; left: 0; right: 0; bottom: 0; 
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="white" opacity="0.8"/><circle cx="20" cy="30" r="0.5" fill="white" opacity="0.6"/><circle cx="80" cy="70" r="0.7" fill="white" opacity="0.7"/><circle cx="10" cy="80" r="0.3" fill="white" opacity="0.5"/><circle cx="90" cy="20" r="0.4" fill="white" opacity="0.9"/></svg>') repeat; 
+            animation: twinkle 3s infinite; 
+            z-index: -1; 
+        }
+        h1 { color: #f39c12; text-shadow: 0 0 20px #f39c12; animation: lightSpeedIn 2s ease-out; }
+        .message { 
+            font-size: 20px; 
+            margin: 20px; 
+            animation: fadeInUp 3s ease-in; 
+            text-shadow: 0 0 10px #ffffff; 
+            line-height: 1.6; 
+        }
+        .prayer { 
+            font-size: 18px; 
+            margin: 20px; 
+            animation: fadeIn 4s ease-in; 
+            text-shadow: 0 0 10px #e94560; 
+            font-style: italic; 
+        }
+        button { 
+            background: linear-gradient(45deg, #0f3460, #e94560); 
+            color: white; 
+            padding: 15px 30px; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 10px; 
+            box-shadow: 0 0 20px #e94560; 
+            animation: tada 1s infinite; 
+            font-family: 'Orbitron', sans-serif; 
+        }
+        a { text-decoration: none; color: #f39c12; animation: fadeIn 2s ease-in; text-shadow: 0 0 10px #f39c12; }
+        @keyframes twinkle { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+        @keyframes lightSpeedIn { 0% { transform: translateX(100%) skewX(-30deg); opacity: 0; } 60% { transform: skewX(20deg); opacity: 1; } 80% { transform: skewX(-5deg); } 100% { transform: translateX(0) skewX(0); } }
+        @keyframes fadeInUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes tada { 0% { transform: scale(1) rotate(0deg); } 10%, 20% { transform: scale(0.9) rotate(-3deg); } 30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); } 40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); } 100% { transform: scale(1) rotate(0deg); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Pesan dan Doa Terbaik</h1>
+    <div class="message">
+        <p>Selamat ulang tahun yang penuh petualangan galaksi! Kamu adalah bintang tercerah di langit kehidupan kami. Semoga tahun ini penuh dengan kebahagiaan, kesuksesan, dan momen-momen tak terlupakan. Kamu luar biasa, dan dunia jadi lebih indah karena ada kamu! 🌟🚀</p>
+        <p>Ingat, setiap tantangan adalah kesempatan untuk berkilau lebih terang. Teruslah bermimpi besar dan mengejarnya. Aku bangga padamu! 😊🎉</p>
+    </div>
+    <div class="prayer">
+        <p>Doa terbaik untukmu: Semoga Allah SWT selalu melimpahkan kesehatan, rezeki yang melimpah, dan kebahagiaan abadi. Semoga langkahmu selalu diberkati, dan impianmu tercapai dengan mudah. Semoga cepat tinggi biar ga di panggil bocil lagi. Amin. 🙏✨</p>
+        <p>Doa dari hati: Ya Allah, lindungilah Novella dari segala marabahaya, berikanlah kekuatan untuk menghadapi hari esok, dan jadikanlah hidupnya penuh berkah. Semoga ulang tahun ini membawa keberuntungan dan kegembiraan yang tiada akhir. Amin. 🌌💫</p>
+    </div>
+    <a href="index.html"><button>Kembali ke Awal</button></a>
+    <br><br>
+    <a href="halaman4.html">Kembali ke Halaman 4</a>
+</body>
+</html>
